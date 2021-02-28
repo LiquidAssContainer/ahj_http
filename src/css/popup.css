@@ -1,0 +1,12 @@
+.error-popup {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+
+  padding: 15px 10px;
+  border: 2px solid #f00;
+  border-radius: 10px;
+
+  background-color: #ffe9e9;
+  font-size: 18px;
+}

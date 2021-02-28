@@ -1,0 +1,128 @@
+.buttons_container {
+  margin-bottom: 20px;
+}
+
+.add-ticket_btn {
+  display: block;
+  margin-left: auto;
+
+  background-color: #fff;
+  border: 2px solid #adadad;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 16px;
+  transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+}
+
+.add-ticket_btn:hover {
+  background-color: #787878;
+  border-color: #787878;
+  color: #fff;
+}
+
+.ticket {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #adadad;
+}
+
+.ticket:hover {
+  cursor: pointer;
+}
+
+.ticket_main-info {
+  display: flex;
+  align-items: center;
+}
+
+.ticket_main-info > *:not(:last-child) {
+  margin-right: 5px;
+}
+
+.ticket:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.checkbox-label {
+  display: block;
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+}
+
+.checkbox-label:hover {
+  cursor: pointer;
+}
+
+.ticket_status-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.fake-checkbox {
+  width: 100%;
+  height: 100%;
+}
+
+.ticket_status-checkbox + .fake-checkbox::before {
+  content: '';
+  display: block;
+
+  width: 20px;
+  height: 20px;
+  border: 1px solid #787878;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.ticket_status-checkbox:checked + .fake-checkbox::before {
+  border-color: #787878;
+  background-color: #787878;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.ticket_name,
+.ticket_creation-date {
+  display: block;
+}
+
+.ticket_name {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 19px;
+}
+
+.ticket_creation-date {
+  min-width: 120px;
+}
+
+.ticket_btn {
+  min-width: 24px;
+  height: 24px;
+  border: 1px solid #000;
+  border-radius: 50%;
+
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.ticket_edit-btn {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns='http://www.w3.org/2000/svg' xmlns:cc='http://creativecommons.org/ns%23' xmlns:dc='http://purl.org/dc/elements/1.1/' id='svg2157' height='600' width='600' version='1.0'%3E%3Cmetadata id='metadata2162'%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage'/%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3Cg id='layer1' class=''%3E%3Cg id='g3765' stroke='%23000000' fill='none'%3E%3Cpath id='rect2990' d='m70.064 422.35 374.27-374.26 107.58 107.58-374.26 374.27-129.56 21.97z' stroke-width='30'/%3E%3Cpath id='path3771' d='m70.569 417.81 110.61 110.61' stroke-width='25'/%3E%3Cpath id='path3777' d='m491.47 108.37-366.69 366.68' stroke-width='25'/%3E%3Cpath id='path3763' d='m54.222 507.26 40.975 39.546' stroke-width='25'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 70%;
+}
+
+.ticket_remove-btn {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg id='close'%3E%3Cpath id='x' d='M18.717 6.697l-1.414-1.414-5.303 5.303-5.303-5.303-1.414 1.414 5.303 5.303-5.303 5.303 1.414 1.414 5.303-5.303 5.303 5.303 1.414-1.414-5.303-5.303z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 75%;
+}
+
+.ticket_description {
+  padding: 10px 70px 0 37px;
+  cursor: auto;
+}

@@ -1,0 +1,112 @@
+.modal_wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal_content {
+  width: 480px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.modal_description {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.modal_detailed-description {
+  margin-bottom: 22px;
+}
+
+.modal_form,
+.modal_remove-confirmation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.modal_label {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.modal_label_text {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.modal_input {
+  width: 100%;
+  border: 2px solid #aaa;
+  padding: 7px;
+  border-radius: 5px;
+
+  font-size: 16px;
+  transition-duration: 0.3s;
+}
+
+.modal_input:focus {
+  border-color: #000;
+}
+
+.modal_btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #aaa;
+  margin: 0 10px;
+
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  font-size: 16px;
+}
+
+.modal_btn:hover,
+.modal_btn:focus {
+  border-color: #000;
+}
+
+.modal_btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  border-color: #21a515;
+  background-color: #21a515;
+}
+
+.close-btn:hover {
+  border-color: #ca2626;
+  background-color: #ca2626;
+}
+
+.error-message {
+  position: absolute;
+  color: #f00;
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+.confirm-modal_description {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+
+  text-align: center;
+}
